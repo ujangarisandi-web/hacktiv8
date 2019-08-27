@@ -1,0 +1,98 @@
+
+1.Newton Scond Law
+#ALGORITMA
+
+Hitung luas  gaya
+
+1. tentukan masa bendanya
+2. tentukan percepatn nya
+3. hitung gaya dengan menggunakan rumus (masa benda * percepatan)
+4. hasil pergitungan tampilkan 
+
+PSEUDOCODE 
+START
+    STORE `masa` with 600
+    STORE `percepatan` with 2
+    STORE `gaya` with  CALCULATE (masa * percepatan)
+    DISPLAY `gaya`
+END
+
+2. Tahun kabisat
+#ALGORITMA
+
+Menentukan tahun kabisat atau Bukan
+1. tentukan tahun
+2. Jika tahun habis di bagi 4 dan tidak habis di bagi 100
+3. Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+4. tampilkan hasil
+
+#PSEUDOCODE
+
+START
+    STORE `tahun` with any value tahun
+
+
+    IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 EQUALS 0 AND `tahun` MOD 400 EQUALS 0 THEN
+        DISPLAY `Tahun kabisat`
+    ELSE IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 NOT EQUALS 0 
+        DISPLAY 'Bukan Tahun Kabisat'
+    END IF
+
+END
+
+
+3. Laundry Day
+
+#ALGORITMA
+1. simpan nilai `jumlah pakaian` dengan  angka 0
+2. Ulangi step 3 selama `jumlah pakain` masih dibawah 20. Jika `jumlah pakain` sudah 20, lanjut ke step 4.
+3. Tambah `jumlah pakain` dengan 1, agar semakin mendekati batas perulangan.
+    Kembali ke step 2.
+4.Tampilkan 'pakaian sudah full', berarti mesin cuci bisa dinyalahkan!
+
+#PSEUDOCODE
+
+START
+    STORE `jumlah pakain` with 0
+
+    WHILE `jumlah pakain` < 20
+        ADD `jumlah pakain` by 1
+
+    DISPLAY 'pakaian sudah full!'
+
+    END WHILE
+
+END
+
+
+4. Periksa Kuku
+#ALGORITMA
+
+1. simpan nilai siswa dengan  angka 0
+2. tambahkan  1 angka pada siswa, jika siswa  belum memenuhi angka 40
+4. kemudia cek kuku siswa
+5. jika kuku panjang maka hukum siswa
+6. jika kuku pendek maka puji siswa
+7. jika siswa sudah mencapai 40 akhiri proses
+
+#PSEUDOCODE
+
+START
+    STORE `siswa` with 0
+
+    FOR `siswa` < 40
+        ADD `siswa` by 1
+        IF kuku siswa panjang true
+            maka hukum siswa
+        ELSE
+            maka puji siswa
+        END IF
+    END FOR
+
+END
+
+
+
+
+
+
