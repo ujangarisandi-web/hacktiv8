@@ -35,7 +35,9 @@ START
     IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 EQUALS 0 AND `tahun` MOD 400 EQUALS 0 THEN
         DISPLAY `Tahun kabisat`
     ELSE IF `tahun` MOD 4 EQUALS 0 AND `tahun` MOD 100 NOT EQUALS 0 
-        DISPLAY 'Bukan Tahun Kabisat'
+        DISPLAY ' Tahun Kabisat'
+    ELSE 
+        DISPLAY ' Bukan Tahun kabisat'
     END IF
 
 END
@@ -58,7 +60,7 @@ START
     WHILE `jumlah pakain` < 20
         ADD `jumlah pakain` by 1
 
-    DISPLAY 'pakaian sudah full!'
+    DISPLAY 'mesin cuci dinyalakan!'
 
     END WHILE
 
@@ -69,7 +71,8 @@ END
 #ALGORITMA
 
 1. simpan nilai siswa dengan  angka 0
-2. tambahkan  1 angka pada siswa, jika siswa  belum memenuhi angka 40
+2. simpan nilai kuku  siswa panjang dengan true
+3. tambahkan  1 angka pada siswa, jika siswa  belum memenuhi angka 40
 4. kemudia cek kuku siswa
 5. jika kuku panjang maka hukum siswa
 6. jika kuku pendek maka puji siswa
@@ -79,17 +82,20 @@ END
 
 START
     STORE `siswa` with 0
+    STORE `kuku siswa panjanh` with 0
 
     FOR `siswa` < 40
         ADD `siswa` by 1
-        IF kuku siswa panjang true
-            maka hukum siswa
+        IF `kuku siswa panjang` true
+            'maka hukum siswa'
         ELSE
-            maka puji siswa
+            'maka puji siswa'
         END IF
     END FOR
 
 END
+
+
 
 
 
