@@ -1,26 +1,3 @@
-// Percepatan sebuah benda akan sebanding dengan gaya 
-// yang diberikan pada benda dan berbanding terbalik
-// dengan massa benda. Arah percepatan benda sama 
-// dengan arah gaya total yang diberikan pada benda.
-
-
-
-
-// 2. Tahun Kabisat
-
-// -Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
-// -Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
-
-// STORE 'tahun' with any value tahun
-
-// IF 'tahun' MOD 4 EQUALS 0 AND 'tahun' MOD 100 EQUALS 0 AND 'tahun' MOD 400 EQUALS 0 THEN
-//     DISPLAY 'Tahun kabisat'
-// ELSE
-//     DISPLAY 'Bukan Tahun Kabisat'
-// END IF
-
-// END
-
 // "JAVASCRIPT"
 
 // var tahun = 2001;
