@@ -20,7 +20,7 @@ console.log(hasilPerkalian);
 // Tugas 3
 
 function processSentence(name, age, address, hobby) {
-    return 'Nama saya ' + name + ', umur saya ' + age + 'alamat saya ' + address + ' dan hobby saya ' + hobby + '!';
+    return 'Nama saya ' + name + ', umur saya ' + age + 'tahun,' + ' alamat saya di ' + address + ', dan saya punya hobby yaitu ' + hobby + '!';
 }
 var name = "Agus";
 var age = 30;
