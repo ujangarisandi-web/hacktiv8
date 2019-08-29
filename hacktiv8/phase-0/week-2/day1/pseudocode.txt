@@ -59,9 +59,7 @@ START
 
     WHILE `jumlah pakain` < 20
         ADD `jumlah pakain` by 1
-
     DISPLAY 'mesin cuci dinyalakan!'
-
     END WHILE
 
 END
