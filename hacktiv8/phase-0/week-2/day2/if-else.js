@@ -1,15 +1,36 @@
-var nama = 'Zero';
+var loop = 1;
+while (loop < 5) {
+    if (loop == 1) {
+        var nama = 'Mikael'
+        var peran = ''
+        console.log('//Output untuk Input ' + loop)
+    } else if (loop == 2) {
+        var nama = 'Nina'
+        var peran = 'ksatria'
+        console.log('//Output untuk Input ' + loop)
+    } else if (loop == 3) {
+        var nama = 'Danu'
+        var peran = 'tabib'
+        console.log('//Output untuk Input ' + loop)
+    } else if (loop == 4) {
+        var nama = 'Zero'
+        var peran = 'penyihir'
+        console.log('//Output untuk Input ' + loop)
+    }
 
-var peran = 'Tabib';
-
-if (nama == 'Mikael') {
-    console.log('Halo Ksatria ' + nama + ', Pilih peranmu untuk memulai game!');
-} else if (nama == 'Nina') {
-    console.log('Selamat datang di Dunia Proxytia,' + nama + '\n' + 'Halo ' + peran + ' ' + nama + ', kamu dapat menyerang dengan senjatamu!');
-} else if (nama == 'Danu') {
-    console.log('Selamat datang di Dunia Proxytia,' + nama + '\n' + ' Halo ' + peran + ' ' + nama + ', kamu akan membantu temanmu yang terluka.');
-} else if (nama == 'Zero') {
-    console.log('Selamat datang di Dunia Proxytia,' + nama + '\n' + ' Halo ' + peran + ' ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!');
-} else {
-    console.log('nama harus di isi!');
+    if (nama === '') {
+        console.log('Nama harus diisi!')
+    } else if (peran === '') {
+        console.log('Halo ' + nama + ', Pilih peranmu untuk memulai game!')
+    } else if (peran === 'ksatria') {
+        console.log('Selamat datang di dunia Proxytia, ' + nama + '\n ' +
+            'Halo Ksatria ' + nama + ', kamu dapat menyerang dengan senjatamu!')
+    } else if (peran === 'tabib') {
+        console.log('Selamat datang di dunia Proxytia, ' + nama + '\n' + 'Halo tabib ' + nama + ', kamu akan membantu temanmu yang terluka.')
+    } else if (peran === 'penyihir') {
+        console.log('Selamat datang di dunia Proxytia, ' + nama + '\n' + 'Halo tabib ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!')
+    } else {
+        console.log('Halo ' + nama + ', Pilih peranmu untuk memulai game')
+    }
+    loop++;
 }
