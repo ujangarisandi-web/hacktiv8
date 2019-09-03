@@ -16,13 +16,3 @@
 
 // console.log(balikString(nama));
 // =================================================
-
-var nilai = 'isi variable global';
-
-function cobain() {
-    var nilai = 'isi variable lokal';
-    var nilaiLokal = 'hacktiv8';
-    tanpaVar = 'no scope';
-    console.log(nilai);
-}
-console.log(cobain());
