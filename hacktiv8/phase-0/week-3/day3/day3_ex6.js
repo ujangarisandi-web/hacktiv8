@@ -16,3 +16,29 @@ console.log(angkaPalindrome(117)); // 121
 console.log(angkaPalindrome(175)); // 181
 console.log(angkaPalindrome(1000)); // 1001
 */
+
+
+function angkaPalindrome(num) {
+
+  while (true) {
+    num++
+    var str = String(num)
+    var length = str.length
+    var i
+    var angka = ''
+    for (i = length - 1; i >= 0; i--) {
+      angka += str[i]
+    }
+
+    if (angka === str) {
+      return Number(angka)
+    }
+  }
+
+}
+
+console.log(angkaPalindrome(8)); // 9
+console.log(angkaPalindrome(10)); // 11
+console.log(angkaPalindrome(117)); // 121
+console.log(angkaPalindrome(175)); // 181
+console.log(angkaPalindrome(1000)); // 1001
