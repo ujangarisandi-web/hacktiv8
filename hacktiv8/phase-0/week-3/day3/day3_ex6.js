@@ -21,17 +21,17 @@ console.log(angkaPalindrome(1000)); // 1001
 function angkaPalindrome(num) {
 
   while (true) {
-    num++
-    var str = String(num)
-    var length = str.length
-    var i
-    var angka = ''
+    num++;
+    var i;
+    var angka = '';
+    var str = String(num);
+    var length = str.length;
     for (i = length - 1; i >= 0; i--) {
-      angka += str[i]
+      angka += str[i];
     }
 
     if (angka === str) {
-      return Number(angka)
+      return Number(angka);
     }
   }
 
