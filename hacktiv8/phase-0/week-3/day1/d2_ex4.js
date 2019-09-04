@@ -1,10 +1,3 @@
-// function dataHandling2(arr) {
-//     for (var i = 0; i < arr.length; i++) {
-//         return arr
-//     }
-// }
-// console.log(dataHandling2(['0001', 'Roman Alamsyah', 'Bandar Lampung', '21/05/1989', 'Membaca']));
-
 var input = ['0001', 'Roman Alamsyah', 'Banda Lampung', '21/05/1989', 'Membaca'];
 
 // var arrInput;
@@ -79,7 +72,7 @@ function dataHandling2(arrInput) {
     }
 
     var tanggal3 = tanggal2.sort(function (value1, value2) {
-        return value1 - value2
+        return value2 - value1
     });
     console.log(tanggal3);
     console.log(tanggal2.join('-'));
@@ -87,6 +80,5 @@ function dataHandling2(arrInput) {
     var nama = input[1].slice(0, 14);
     console.log(nama);
 
-    // console.log(tanggal2.join('-'));
 }
 dataHandling2(input);
