@@ -79,3 +79,30 @@ for (var i = 0; i < 5; i++) {
     text += 'The number is ' + i + ' \n'
 }
 console.log(text); */
+
+
+/* 
+   4
+  444
+ 44444
+4444444*/
+
+
+
+// SKELETON CODE 2 (Code Sample)
+var angka = 4; // isi dengan nilai tinggi piramid
+var text = ''
+// Buat code disini untuk part 2.
+function piramid() {
+    for (var i = 0; i < angka; i++) {
+        for (var j = 0; j < angka - i - 1; j++) {
+            text += ' '
+        }
+        for (var k = 0; k < ((i * 2) + 1); k++) {
+            text += angka
+        }
+        text += '\n'
+    }
+    return text
+}
+console.log(piramid())

@@ -37,7 +37,7 @@ function tentukanDeretAritmatika(arr) {
     }
     // return result;
     return angkaPertma;
-    // return secondGap;
+    // return ankaKedua;
 
 }
 // TEST CASES
