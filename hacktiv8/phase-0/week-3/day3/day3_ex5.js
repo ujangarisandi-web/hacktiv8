@@ -17,18 +17,18 @@ console.log(palindrome('mister')); // false
 */
 
 function palindrome(kata) {
-    var lawanKata = ''
+    var lawanKata = '';
     for (var i = kata.length - 1; i >= 0; i--) {
         lawanKata += kata[i];
     }
     if (kata === lawanKata) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 console.log(palindrome('katak')); //true
-console.log(palindrome('blanket')); //true
+console.log(palindrome('blanket')); //false
 console.log(palindrome('civic')); //true
 console.log(palindrome('kasur rusak')); //true
-console.log(palindrome('mister')); //true
+console.log(palindrome('mister')); //false
