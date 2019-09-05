@@ -31,3 +31,51 @@ console.log(pasanganTerbesar(910233)); // 91
 console.log(pasanganTerbesar(71856421)); // 85
 console.log(pasanganTerbesar(79918293)); // 99
  */
+
+
+
+
+/* http://www.jstips.co/en/javascript/looping-over-arrays/ */
+
+/* // while
+var index = 0;
+var array = [1, 2, 3, 4, 5, 6];
+
+while (index < array.length) {
+    console.log(array[index]);
+    index++;
+} */
+
+/* //for
+var array = [1, 2, 3, 4, 5, 6];
+for (var index = 0; index < array.length; index++) {
+    console.log(array[index]);
+} */
+
+
+
+
+/* https://www.w3schools.com/js/js_loop_for.asp */
+/* 
+BMW 
+BMW Volvo 
+BMW Volvo Saab 
+BMW Volvo Saab Ford 
+BMW Volvo Saab Ford Fiat 
+BMW Volvo Saab Ford Fiat Audi 
+*/
+/* var text = ''
+// var cars = [1, 2, 3, 4, 5, 6];
+var cars = ['BMW', 'Volvo', 'Saab', 'Ford', 'Fiat', 'Audi'];
+for (var i = 0; i < cars.length; i++) {
+    text += cars[i] + ' ';
+    console.log(text);
+} */
+
+
+
+/* var text = '';
+for (var i = 0; i < 5; i++) {
+    text += 'The number is ' + i + ' \n'
+}
+console.log(text); */
