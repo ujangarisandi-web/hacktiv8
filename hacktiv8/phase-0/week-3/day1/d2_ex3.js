@@ -9,6 +9,10 @@ var input = [
 function dataHandling(input) {
     for (var i = 0; i < input.length; i++) {
         console.log('Nomor ID : ' + input[i][0]);
+        console.log('Nama Lengkap : ' + input[i][1]);
+        console.log('Ttl : ' + input[i][2] + ' ' + input[i][3]);
+        console.log('Hobi : ' + input[i][4]);
+        console.log('\n');
     }
 }
 dataHandling(input);
