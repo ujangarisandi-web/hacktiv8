@@ -75,7 +75,7 @@ function dataHandling2(arrInput) {
         return value2 - value1
     });
     console.log(tanggal3);
-    console.log(tanggal2.join('-'));
+    console.log(tanggal2.join('-')); //belum nemu.. efect sort dari tanggal3 gak bisa dihilangkan -_-
 
     var nama = input[1].slice(0, 14);
     console.log(nama);
