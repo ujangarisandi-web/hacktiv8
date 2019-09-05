@@ -2,7 +2,7 @@
 Problem
 
 Diberikan sebuah function pasanganTerbesar(angka) yang menerima 1 parameter berupa angka. Functiona akan menentukan pasangan dua digit angka mana yang paling besar dan me-return angka tersebut. Contoh, jika angka adalah 183928, maka function akan me-return 92, pasangan dua digit angka yang paling besar diantara yang lainnya.
- 
+
 CODE
 
 function pasanganTerbesar(num) {
@@ -29,7 +29,7 @@ function pasanganTerbesar(num) {
             banding = number
         }
     }
-    return banding
+    return banding;
 }
 
 // TEST CASES
