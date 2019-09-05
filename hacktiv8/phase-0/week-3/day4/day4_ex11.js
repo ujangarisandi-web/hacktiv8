@@ -8,7 +8,7 @@ Diberikan sebuah function tentukanDeretAritmatika(arr) yang menerima satu parame
 CODE
 
 function tentukanDeretAritmatika(arr) {
-  // you can only write your code here!
+// you can only write your code here!
 }
 
 // TEST CASES
