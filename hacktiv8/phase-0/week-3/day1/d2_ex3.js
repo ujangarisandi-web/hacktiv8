@@ -7,16 +7,8 @@ var input = [
 
 
 function dataHandling(input) {
-    var read = ''
-    for (var i = 0; i <= input.length - 1; i++) {
-        var id = 'Nomor ID :' + input[i][0]
-        var nama = 'Nama Lengkap : ' + input[i][1]
-        var ttl = 'TTL : ' + input[i][2]
-        var hobi = 'Hobi : ' + input[i][3]
-        if (i < input.length) {
-            read += id + '\n' + nama + '\n' + ttl + '\n' + hobi + '\n \n'
-        }
+    for (var i = 0; i < input.length; i++) {
+        console.log('Nomor ID : ' + input[i][0]);
     }
-    return read
 }
-console.log(dataHandling(input));
+dataHandling(input);
