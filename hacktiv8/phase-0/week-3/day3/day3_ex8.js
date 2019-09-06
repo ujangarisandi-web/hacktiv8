@@ -19,17 +19,23 @@ console.log(pasanganTerbesar(79918293)); // 99
 
 
 function pasanganTerbesar(num) {
-    var number;
-    var banding = '';
-    var keString = num.toString();
-    for (var i = 0; i < keString.length; i++) {
-        number = keString[i] + keString[i + 1];
+    var strAngka = num.toString();
 
-        if (number > banding) {
-            banding = number
-        }
+    //pengulangan untuk mengambil tiap pasangan angka untuk dimasukan ke array (arrStrAngka)
+    var arrStrAngka = [];
+    for (var i = 0; i < strAngka.length - 1; i++) {
+        arrStrAngka.push(Number(strAngka[i] + strAngka[i + 1]));
+
     }
-    return banding;
+    // return arrStrAngka;
+    //buat array baru yang sama dengan arrStrAngka menggunakan methode slice, lalu diurutkan dari yang terbesar.
+    var urutan = arrStrAngka.slice();
+    urutan.sort(function (a, b) {
+        return b - a
+    })
+    //mengembalikan nilai index terakhir dari array urutan
+    return urutan[0];
+
 }
 
 // TEST CASES
