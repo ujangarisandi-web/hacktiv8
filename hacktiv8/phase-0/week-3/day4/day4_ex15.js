@@ -24,26 +24,27 @@ console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'c
 */
 
 
-function groupAnimals(arr) {
+function groupAnimals(animals) {
     var kamus = 'abcdefghijklmnopqrstuvwxyz';
-    var newArr = [];
+    var arr = [];
 
     // code pengurutann abjad
     for (var i = 0; i <= kamus.length - 1; i++) {
-        var gather = [];
+        var tampung = [];
 
         // code pengumpulan hewan berdasarkan abjad alpha
-        for (var j = 0; j <= arr.length - 1; j++) {
-            if (arr[j][0] === kamus[i]) {
-                gather.push(arr[j])
+        for (var j = 0; j <= animals.length - 1; j++) {
+            if (animals[j][0] === kamus[i]) {
+                tampung.push(animals[j])
             }
         }
-        if (gather.length > 0) {
-            newArr.push(gather);
+        //code untuk pengumpulan hewan setelah abjad alpha
+        if (tampung.length > 0) {
+            arr.push(tampung);
         }
 
     }
-    return newArr;
+    return arr;
 }
 
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
