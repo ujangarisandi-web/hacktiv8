@@ -27,7 +27,14 @@ function pasanganTerbesar(angka) {
     arrStrAngka.push(Number(strAngka[i] + strAngka[i + 1]));
 
   }
-  return arrStrAngka;
+  // return arrStrAngka;
+  //buat array baru yang sama dengan arrStrAngka menggunakan methode slice, lalu diurutkan dari yang terbesar.
+  var urutan = arrStrAngka.slice();
+  urutan.sort(function (a, b) {
+    return b - a
+  })
+  //mengembalikan nilai index terakhir dari array urutan
+  return urutan[0];
 
 }
 console.log(pasanganTerbesar(641573)); // 73
