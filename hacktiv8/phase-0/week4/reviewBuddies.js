@@ -25,7 +25,6 @@ function jumlahIndexNama2(nama) {
     for (var i = 0; i < nama.length; i++) {
         for (var j = 0; j < abjad.length; j++) {
             if (nama[i] === abjad[j]) {
-                // nilai2 += j + 1
                 nilai2 += j + 1
 
 
@@ -35,4 +34,3 @@ function jumlahIndexNama2(nama) {
     return nilai2
 }
 console.log(jumlahIndexNama2('ujang arisandi'));
-// jumlahIndexNama2('ujang arisandi')
