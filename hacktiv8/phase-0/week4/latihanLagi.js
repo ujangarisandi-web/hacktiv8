@@ -1,14 +1,12 @@
 // function cariO(lintasan) {
 
-//     var langkah = 0
+//     var langkah = 0;
 //     for (var i = 0; i < lintasan.length; i++) {
-//         langkah = langkah + 1
-//         // console.log(langkah);
+//         langkah += 1
 //         if (lintasan[i] === 'o') {
 //             return langkah
 //         }
 //     }
-
 //     return 0
 
 // }
@@ -21,13 +19,29 @@ console.log('====Modus===');
 function cariModus(nama1, nama2) {
     var total = 0
     for (var i = 0; i < nama1.length; i++) {
-
         if (nama1[i] === nama2) {
-            total = total + 1
+            total += 1
         }
     }
-
     return total
 }
 console.log(cariModus('ujangdanilhamn', 'n')); //3
 console.log(cariModus('egaandika', 'e')); //1
+
+// console.log('============baru==============');
+
+
+// function cariNilai(lintasan) {
+//     var langkah = 0
+//     for (var i = 0; i < lintasan.length; i++) {
+//         // console.log(langkah);
+//         langkah = langkah + 1
+//         if (lintasan[i] === 'o') {
+//             return langkah - 1
+//         }
+//     }
+//     return -1
+// }
+// console.log(cariNilai(['o', '', '', '', ''])); //0
+// console.log(cariNilai(['', '', '', '', 'o'])); //4
+// console.log(cariNilai(['', ''])); //-1
