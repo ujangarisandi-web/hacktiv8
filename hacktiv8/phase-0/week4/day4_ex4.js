@@ -32,6 +32,7 @@ function cariModus(arr) {
             }
         }
     }
+    /* mencari nilai modus */
     var dataModus = 0
     var muncul = 0
     for (var k = 0; k < kelompok.length; k++) {
@@ -40,7 +41,10 @@ function cariModus(arr) {
             muncul += kelompok[k][1]
 
         }
+
     }
+    /* menghandle nilai yang sama */
+
     return dataModus
 
 

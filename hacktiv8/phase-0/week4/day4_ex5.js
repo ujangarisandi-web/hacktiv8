@@ -15,3 +15,21 @@ console.log(ubahHuruf('javascript')); // kbwbtdsjqu
 console.log(ubahHuruf('keren')); // lfsfo
 console.log(ubahHuruf('semangat')); // tfnbohbu
 */
+function ubahHuruf(kata) {
+  var abjad = 'abcdefghijklmnopqrstuvwxyz'
+  var hasil = ''
+  for (var i = 0; i < kata.length; i++) {
+    var posisiHuruf = abjad.indexOf(kata[i])
+    var posisiBaru = posisiHuruf + 1
+    var hurufBaru = abjad[posisiBaru]
+    hasil += hurufBaru
+  }
+  return hasil
+}
+
+// TEST CASES
+console.log(ubahHuruf('wow')); // xpx
+console.log(ubahHuruf('developer')); // efwfmpqfs
+console.log(ubahHuruf('javascript')); // kbwbtdsjqu
+console.log(ubahHuruf('keren')); // lfsfo
+console.log(ubahHuruf('semangat')); // tfnbohbu
