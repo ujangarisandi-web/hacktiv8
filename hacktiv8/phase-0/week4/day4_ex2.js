@@ -20,10 +20,20 @@ console.log(fpb(17, 23)); // 1
 var angka1;
 
 function fpb(angka1, angka2) {
-    var nilai = 0
-    for (var i = 0; i < angka1.lengt; i++) {
-        if (angka1)
+  // var  check = angka1< angka2? angka1:angka2
+  var check = 0
+  if (angka1 < angka2) {
+    check = angka1
+  } else {
+    check = angka2
+  }
+  for (var i = check; i >= 0; i--) {
+    if (angka1 % i === 0 && angka2 % i === 0) { // akan terus mengulang hingga ditemukan angka yang dapat membagi kedua angka tersebut
+      return i
     }
+  }
+
+
 }
 console.log(fpb(12, 16)); // 4
 console.log(fpb(50, 40)); // 10
