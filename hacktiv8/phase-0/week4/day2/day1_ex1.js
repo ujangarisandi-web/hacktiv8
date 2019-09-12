@@ -29,4 +29,3 @@ console.log(angkaPrima(7));
 console.log(angkaPrima(6));
 console.log(angkaPrima(23));
 console.log(angkaPrima(33));
-console.log(angkaPrima(49));
