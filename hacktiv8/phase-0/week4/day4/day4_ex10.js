@@ -37,7 +37,7 @@ function changeMe(arr) {
         arrObj.lastname = arr[i][1]
         arrObj.gender = arr[i][2]
         arrObj.age = arr[i][3]
-        if (arr[i][3] === undefined) {
+        if (arr[i][3] === undefined) { // jika usianya tidak ada
             arrObj.age = 'invalid Birt year'
         } else {
             arrObj.age = 2019 - arr[i][3]
@@ -45,7 +45,7 @@ function changeMe(arr) {
         }
         console.log(arrObj)
     }
-    if (arr.length === 0) {
+    if (arr.length === 0) { // mengecek kalo datanya kosong
         console.log('""');
     }
 }
