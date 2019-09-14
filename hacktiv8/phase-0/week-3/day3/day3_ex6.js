@@ -28,6 +28,7 @@ function angkaPalindrome(num) {
     var length = str.length;
     for (i = length - 1; i >= 0; i--) {
       angka += str[i];
+      // console.log(str[i]);
     }
 
     if (angka === str) {
