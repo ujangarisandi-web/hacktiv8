@@ -2,6 +2,10 @@
 mencari kelipatan dua dari array
 */
 
+
+
+
+
 function kelipatanDua() {
     var arr = [
         [1, 2, 3],
