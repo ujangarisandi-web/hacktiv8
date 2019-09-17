@@ -50,25 +50,61 @@ console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan ada
 
 function changeVocals(str) {
     //code di sini
-
+    var newStr = ''
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] == 'a' || str[i] == 'A') {
+            if (str[i] += 'A') {
+                newStr += 'B'
+            } else {
+                newStr += 'b'
+            }
+        } else if (str[i] == 'i' || str[i] == 'I') {
+            if (str[i] = 'I') {
+                newStr += 'J'
+            } else {
+                newStr += 'j'
+            }
+        } else if (str[i] == 'u' || str[i] == 'U') {
+            if (str[i] == 'U') {
+                newStr += 'V'
+            } else {
+                newStr += 'v'
+            }
+        } else if (str[i] == 'e' || str[i] == 'E') {
+            if (str[i] == 'E') {
+                newStr += 'F'
+            } else {
+                newStr += 'f'
+            }
+        } else if (str[i] == 'o' || str[i] == 'O') {
+            if (str[i] == 'O') {
+                newStr += 'P'
+            } else {
+                newStr += 'p'
+            }
+        } else {
+            newStr += str[i]
+        }
+    }
+    return newStr
 
 }
 
-function reverseWord(str) {
-    //code di sini
-}
+// function reverseWord(str) {
+//     //code di sini
+// }
 
-function setLowerUpperCase(str) {
-    //code di sini
-}
+// function setLowerUpperCase(str) {
+//     //code di sini
+// }
 
-function removeSpaces(str) {
-    //code di sini
-}
+// function removeSpaces(str) {
+//     //code di sini
+// }
 
-function passwordGenerator(name) {
-    //code di sini
-}
+// function passwordGenerator(name) {
+//     //code di sini
+// }
 
 console.log(changeVocals('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
 console.log(changeVocals('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
