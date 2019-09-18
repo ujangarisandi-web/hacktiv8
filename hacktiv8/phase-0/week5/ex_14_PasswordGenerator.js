@@ -105,9 +105,26 @@ function reverseWord(str) {
 
 console.log('====ini balik huruf===');
 console.log(reverseWord('Sergei Dragunov'));
-// function setLowerUpperCase(str) {
-//     //code di sini
-// }
+
+function setLowerUpperCase(str) {
+    //code di sini
+    //ubah kalimat ke dalam array
+    var ubahStr = str.split('')
+    // return ubahStr
+
+    //ubah huruf besar dan kecil
+    for (var i = 0; i < ubahStr.length; i++) {
+        if (ubahStr[i].toUpperCase() === ubahStr[i]) {
+            ubahStr[i] = ubahStr[i].toLowerCase()
+        } else {
+            ubahStr[i] = ubahStr[i].toUpperCase()
+        }
+    }
+    //gabungkan kembali menjadi string
+    return ubahStr.join('')
+}
+console.log('====ini balik huruf besar-kecil===');
+console.log(setLowerUpperCase('Sergei Dragunov'));
 
 // function removeSpaces(str) {
 //     //code di sini
