@@ -140,11 +140,17 @@ function removeSpaces(str) {
 console.log('====ini hapus spasil===');
 console.log(removeSpaces('Sergei Dragunov'));
 
-// function passwordGenerator(name) {
-//     //code di sini
-// }
+function passwordGenerator(name) {
+    //code di sini
+    if (name.length < 5) {
+        return 'Minimal karakter yang diinput adalah 5 karakter'
+    } else { //panggil function yang telah di buat diatas
+        return removeSpaces(setLowerUpperCase(reverseWord(changeVocals(name))))
+    }
+}
 
-// console.log(passwordGenerator('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
-// console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
-// console.log(passwordGenerator('Alexei')); // 'JFXFLb'
-// console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'
+
+console.log(passwordGenerator('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
+console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
+console.log(passwordGenerator('Alexei')); // 'JFXFLb'
+console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'
