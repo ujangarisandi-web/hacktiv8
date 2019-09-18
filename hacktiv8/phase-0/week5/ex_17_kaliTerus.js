@@ -14,6 +14,19 @@ Code:
 
 function kaliTerusRekursif(angka) {
     // you can only write your code here!
+    //ubah kedalam array
+    var parsedAngka = String(angka).split('')
+    var hasil = 1
+    // return parsedAngka
+    // perulangan untuk mengalikan angka dari index  array
+    for (var i = 0; i < parsedAngka.length; i++) {
+        hasil *= Number(parsedAngka[i])
+    }
+    //kondisi untuk men-Chek apakah angka hasil kai sudah bernilai 1 digit
+    if (String(hasil).length !== 1) {
+        return kaliTerusRekursif(hasil)
+    }
+    return hasil
 }
 
 // TEST CASES
