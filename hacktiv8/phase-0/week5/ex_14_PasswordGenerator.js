@@ -126,9 +126,19 @@ function setLowerUpperCase(str) {
 console.log('====ini balik huruf besar-kecil===');
 console.log(setLowerUpperCase('Sergei Dragunov'));
 
-// function removeSpaces(str) {
-//     //code di sini
-// }
+function removeSpaces(str) {
+    //code di sini
+    var newStr = ''
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] != ' ') {
+            newStr += str[i]
+        }
+    }
+    return newStr
+
+}
+console.log('====ini hapus spasil===');
+console.log(removeSpaces('Sergei Dragunov'));
 
 // function passwordGenerator(name) {
 //     //code di sini
