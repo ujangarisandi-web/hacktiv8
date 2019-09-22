@@ -16,3 +16,18 @@ console.log(cariPelaku('bcabcac')); // 1
 console.log(cariPelaku('abcabcabc')); // 3
 console.log(cariPelaku('babcbacabc')); // 2
 */
+
+function cariPelaku(str) {
+    // you can only write your code here!
+    var code = str.match(/abc/gi)
+
+    return code.length
+
+}
+
+// TEST CASES
+console.log(cariPelaku('mabcvabc')); // 2
+console.log(cariPelaku('abcdabdc')); // 1
+console.log(cariPelaku('bcabcac')); // 1
+console.log(cariPelaku('abcabcabc')); // 3
+console.log(cariPelaku('babcbacabc')); // 2
